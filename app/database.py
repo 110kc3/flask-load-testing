@@ -28,7 +28,7 @@ db_host = os.environ["CLOUD_SQL_CONNECTION_NAME"]
 #     db_hostname, db_port = host_args[0], int(host_args[1])
 
 
-db_hostname = "34.118.93.58"
+db_hostname = "127.0.0.1" # Use localhost as cloud-sql-proxy is in the same pod  - db ip: 34.118.93.58
 db_port = "3306"
 pool = sqlalchemy.create_engine(
     # Equivalent URL:
