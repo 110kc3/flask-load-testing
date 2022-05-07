@@ -83,4 +83,4 @@ https://github.com/GoogleCloudPlatform/cloudsql-proxy/tree/main/examples/k8s-sid
 https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
 
 Options explaining configuration:
-Connecting to Cloud SQL from Kubernetes
+Connecting to Cloud SQL from Kubernetes - https://www.youtube.com/watch?v=CNnzbNQgyzo

@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import os
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
-load_dotenv()
+# load_dotenv()
 
 # initializing Flask app
 app = Flask(__name__)
