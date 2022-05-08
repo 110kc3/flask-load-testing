@@ -3,16 +3,8 @@ from dotenv import load_dotenv
 from sqlalchemy.orm import sessionmaker
 import os
 import sqlalchemy
-# load_dotenv()
-# dbUrl = os.environ.get("DATABASE_URL")
-# engine = create_engine(dbUrl)
 
-
-
-
-# Remember - storing secrets in plaintext is potentially unsafe. Consider using
-# something like https://cloud.google.com/secret-manager/docs/overview to help keep
-# secrets secret.
+#load secrets from environment variables
 db_user = os.environ["CLOUD_SQL_USERNAME"]
 db_pass = os.environ["CLOUD_SQL_PASSWORD"]
 db_name = os.environ["CLOUD_SQL_DATABASE_NAME"]
