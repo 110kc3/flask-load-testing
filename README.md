@@ -73,6 +73,13 @@ kubectl expose deployment flaskapp-deployment-gcp  --type LoadBalancer --port 80
 
 
 
+//quick deployment of new image
+
+docker build -t 110kc3/flaskapp . 
+docker tag 110kc3/flaskapp:latest gcr.io/oceanic-glazing-347308/flaskapp
+docker push gcr.io/oceanic-glazing-347308/flaskapp
+kubectl apply -f .\proxy_with_workload_identity.yaml 
+
 ///other checks:
 
 kubectl get svc
